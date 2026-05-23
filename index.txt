@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>风水命理教学 | 仁财易讲堂</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Noto Serif SC", "SimSun", serif;
+            background-color: #f5f0e6;
+            color: #333;
+            line-height: 1.8;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #8b4513;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #8b4513;
+            padding-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+        .feature-list {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        .feature-list li {
+            font-size: 1.1rem;
+            margin: 15px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .feature-list li::before {
+            content: "◆";
+            color: #8b4513;
+            position: absolute;
+            left: 0;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>风水命理教学</h1>
+        <p class="subtitle">仁财易讲堂 · 动画入门课程</p >
+
+        <div class="intro">
+            <p>欢迎来到我的风水命理教学网站！这里将用通俗易懂的动画方式，带你走进传统玄学的世界，从户型风水到八字命理，从零开始，系统学习。</p >
+        </div>
+
+        <ul class="feature-list">
+            <li>户型风水避坑指南：3大死穴+化解方法</li>
+            <li>五行相生相克：动画拆解底层逻辑</li>
+            <li>八字十神入门：关系图轻松看懂</li>
+            <li>后续更新更多动画教学内容，敬请期待！</li>
+        </ul>
+
+        <div class="footer">
+            © 2026 仁财易讲堂 · 风水命理教学
+        </div>
+    </div>
+</body>
+</html>
