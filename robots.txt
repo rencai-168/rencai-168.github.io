@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rencai-168.github.io/sitemap.xml
