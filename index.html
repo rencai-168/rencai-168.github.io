@@ -2,24 +2,22 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <!-- SEO优化（符合Lighthouse要求） -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>仁财易讲堂 - 命理风水咨询</title>
     <meta name="description" content="专业八字命理、奇门遁甲、风水堪舆、择吉服务，传承传统易学智慧，助你趋吉避凶。">
     <style>
-        /* 全局样式重置 + 古风基础 */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: "KaiTi", "STKaiti", "SimSun", serif;
+            font-family: KaiTi, STKaiti, SimSun, serif;
         }
         body {
             background-color: #f9f5ef;
             color: #3b2b1f;
             line-height: 1.6;
         }
-        /* 顶部导航条 - 古风深棕底+描金 */
         .navbar {
             position: fixed;
             top: 0;
@@ -31,7 +29,6 @@
             z-index: 999;
             box-shadow: 0 3px 10px rgba(0,0,0,0.2);
         }
-        /* 导航容器 - 居中排版 */
         .nav-container {
             width: 90%;
             max-width: 1200px;
@@ -41,7 +38,6 @@
             flex-wrap: wrap;
             gap: 10px;
         }
-        /* 导航按钮 - 古风描边+朱砂红高亮 */
         .nav-btn {
             padding: 10px 18px;
             color: #f9f5ef;
@@ -52,58 +48,38 @@
             border-radius: 4px;
             transition: all 0.3s ease;
         }
-        /* 悬浮效果：描金+朱砂红底色 */
         .nav-btn:hover {
             color: #fff;
             background-color: #9b2226;
             border-color: #b8860b;
         }
-        /* 首页按钮高亮 - 朱砂红+描金 */
         .nav-btn.active {
             color: #fff;
             background-color: #9b2226;
             border: 1px solid #b8860b;
         }
-        /* 主体内容区域 */
         .content {
             margin-top: 100px;
             padding: 40px 20px;
             text-align: center;
         }
-        /* 标题 - 古风字体+描金效果 */
         .content h1 {
             font-size: 32px;
             color: #3b2b1f;
             letter-spacing: 4px;
             margin-bottom: 20px;
-            position: relative;
         }
-        .content h1::after {
-            content: "";
-            display: block;
-            width: 80px;
-            height: 2px;
-            background-color: #b8860b;
-            margin: 15px auto;
-        }
-        /* 说明文字 - 浅棕色+柔和排版 */
-        .content p {
-            font-size: 18px;
-            color: #5a4636;
-            margin-bottom: 40px;
-        }
-        /* 风水元素装饰线 */
         .divider {
             width: 200px;
             height: 1px;
             background: linear-gradient(to right, transparent, #b8860b, transparent);
-            margin: 30px auto;
+            margin: 15px auto 30px;
         }
-        /* 移动端适配优化 */
+        .content p {
+            font-size: 18px;
+            color: #5a4636;
+        }
         @media (max-width: 600px) {
-            .nav-container {
-                gap: 8px;
-            }
             .nav-btn {
                 padding: 8px 12px;
                 font-size: 14px;
@@ -111,14 +87,10 @@
             .content h1 {
                 font-size: 24px;
             }
-            .content p {
-                font-size: 16px;
-            }
         }
     </style>
 </head>
 <body>
-    <!-- 顶部导航条 - 命理风水主题 -->
     <div class="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-btn active">首页</a>
@@ -130,7 +102,6 @@
         </div>
     </div>
 
-    <!-- 首页主体内容 -->
     <div class="content">
         <h1>仁财易讲堂</h1>
         <div class="divider"></div>
