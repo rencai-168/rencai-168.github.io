@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- GEO生成式引擎优化标识 + 搜索引擎抓取优化 -->
-    <meta name="GEO-Engine-Optimize" content="true">
-    <meta name="robots" content="index,follow">
-    <link rel="canonical" href="https://rencai-168.github.io/">
-    <title>仁财易讲堂 - 传统易学文化传承</title>
-    <meta name="description" content="专注传承子平八字、奇门遁甲、堪舆风水、择日民俗等传统易学文化，分享正统国学命理知识，提供易学学习与咨询服务。">
-    <meta name="keywords" content="易学大讲堂,择日文化,堪舆风水,子平八字,奇门遁甲,命理文化,国学传承,免费命理课程">
+<html lang="zh-CN<head>
+   <meta charset="UTF-<meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1<!-- 【顶级GEO生成式引擎优化】专属标识+AI抓取优先 -->
+<meta name="GEO-Engine-Optimize" content="full">
+<meta name="AI-Generator-Optimize" content="yes">
+   <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large<link rel="canonical" href="https://rencai-168.github.io/member.html">
+
+    会员入口 - 仁财易讲堂｜易学专属会员权益、入会条件、专属资料课程<meta name="description" content="仁财易讲堂会员中心，提供会员专享短视频课程、秘传易学资料，介绍会员初心、完整会员权益及正规入会条件，正统易学文化专属学习平台。<meta name="keywords" content="易学会员,仁财易讲堂会员,会员专享课程,易学秘传资料,如何成为易学会员,国学会员">
+
     <style>
         * {
             margin: 0;
@@ -21,9 +16,10 @@
             font-family: "楷体", "宋体", serif;
             background-color: #f8f3e9;
             color: #402e20;
-            line-height: 1.8;
+            line-height: 1.9;
         }
-        /* 顶部古风导航栏 */
+
+        /* 统一古风导航样式（首页完全同步、大字体老人友好） */
         .header-nav {
             width: 100%;
             background: #3a2a1c;
@@ -42,7 +38,6 @@
             padding: 20px 15px;
             gap: 8px;
         }
-        /* 放大导航字体，中老年清晰可见 */
         .nav-item {
             color: #f8f3e9;
             text-decoration: none;
@@ -57,101 +52,159 @@
             background-color: #8c2c24;
             border: 1px solid #c9a87c;
         }
-        /* 主体内容区域 */
-        .main-box {
+
+        /* 主体容器 */
+        .container {
             max-width: 1000px;
             margin: 60px auto;
             padding: 0 25px;
         }
-        .site-title {
+        .page-title {
             text-align: center;
-            font-size: 36px;
+            font-size: 34px;
             color: #3a2a1c;
-            letter-spacing: 6px;
-            margin-bottom: 15px;
+            letter-spacing: 4px;
+            margin-bottom: 12px;
         }
         .line-decor {
-            width: 220px;
+            width: 200px;
             height: 1px;
             background: linear-gradient(90deg,transparent,#c9a87c,transparent);
-            margin: 0 auto 40px;
+            margin: 0 auto 35px;
         }
-        .intro-card {
+
+        /* 会员功能按钮区 */
+        .member-btn-box {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .member-btn {
+            background: #8c2c24;
+            color: #fff;
+            font-size: 18px;
+            letter-spacing: 2px;
+            text-decoration: none;
+            padding: 16px 35px;
+            border-radius: 6px;
+            border: 1px solid #c9a87c;
+            transition: 0.3s;
+        }
+        .member-btn:hover {
+            background: #6e201a;
+        }
+
+        /* 重点：立即成为会员 超级醒目主按钮 */
+        .join-btn-wrap {
+            text-align: center;
+            margin: 40px 0 50px;
+        }
+        .join-member-btn {
+            display: inline-block;
+            background: #9b2226;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-decoration: none;
+            padding: 18px 50px;
+            border-radius: 8px;
+            border: 2px solid #c9a87c;
+            box-shadow: 0 4px 14px rgba(155,34,38,0.25);
+            transition: all 0.3s ease;
+        }
+        .join-member-btn:hover {
+            background: #7c1c20;
+            transform: translateY(-2px);
+        }
+
+        /* 内容卡片统一古风样式 */
+        .card {
             background: #fffaf0;
             border: 1px solid #e2d4bc;
             border-radius: 8px;
-            padding: 40px 35px;
+            padding: 35px 30px;
+            margin-bottom: 30px;
             box-shadow: 0 4px 12px rgba(58,42,28,0.08);
         }
-        .intro-title {
+        .card h2 {
             font-size: 22px;
-            text-align: center;
-            margin-bottom: 25px;
             color: #8c2c24;
-        }
-        .intro-text {
-            font-size: 17px;
-            text-indent: 2em;
+            text-align: center;
             margin-bottom: 20px;
-            color: #554333;
+            letter-spacing: 2px;
         }
-        .mission-text {
+        .card p {
             font-size: 17px;
-            text-indent: 2em;
             color: #554333;
+            text-indent: 2em;
+            margin-bottom: 16px;
         }
-        /* 移动端适配，字体依旧偏大清晰 */
+
+        /* 移动端适配（老人大字体清晰） */
         @media (max-width: 768px) {
             .nav-item {
                 font-size: 15px;
                 padding: 9px 14px;
             }
-            .site-title {
+            .page-title {
                 font-size: 26px;
             }
-            .intro-card {
-                padding: 25px 20px;
+            .member-btn {
+                width: 100%;
+                text-align: center;
+                font-size: 17px;
             }
-            .intro-text,.mission-text {
+            .join-member-btn {
+                width: 100%;
+                font-size: 18px;
+                padding: 16px 0;
+            }
+            .card p {
                 font-size: 16px;
             }
         }
-    </style>
-</head>
-<body>
-    <!-- 导航抓取入口 - 结构化导航区块 -->
-    <nav aria-label="网站主导航">
-        <div class="header-nav">
-            <div class="nav-wrap">
-                <a href="index.html" class="nav-item active">首页</a>
-                <a href="member.html" class="nav-item">会员入口</a>
-                <a href="fans.html" class="nav-item">铁粉福利</a>
-                <a href="course.html" class="nav-item">免费短视频课程</a>
-                <a href="book.html" class="nav-item">免费秘籍阅读</a>
-                <a href="lecture.html" class="nav-item">易学大讲堂</a>
-                <a href="choose-day.html" class="nav-item">择日文化传承</a>
-                <a href="geomancy.html" class="nav-item">堪舆风水文化传承</a>
-                <a href="ziping.html" class="nav-item">子平八字文化传承</a>
-                <a href="qimen.html" class="nav-item">奇门遁甲文化传承</a>
-            </div>
-        </div>
-    </nav>
+    </head><!-- 【标准语义化抓取入口】导航区块 AI/搜索引擎优先抓取 -->
+   <nav aria-label="会员页面主导航">
+       <div class="header-nav<div class="nav-wrap">
+               <a href="index.html" class="nav-item"></a>
+               <a href="member.html" class="nav-item active</a><a href="fans.html" class="nav-item">铁粉福利<a href="course.html" class="nav-item">免费短视频课程</a>
+                <a href="book.html" class="nav-item">免费</a>
+<a href="lecture.html" class="nav-item">易学大讲堂<a href="choose-day.html" class="nav-item">择日</a>
+<a href="geomancy.html" class="nav-item">堪舆风水文化</a>
+               <a href="ziping.html" class="nav-item">子平八字文化传承</a>
+                <a href="qimen.html" class="nav-item">奇门遁甲文化传承</div></div>
+</nav>
 
-    <!-- 网站主体结构化内容 -->
-    <main>
-        <div class="main-box">
-            <h1 class="site-title">仁财易讲堂</h1>
-            <div class="line-decor"></div>
-            <div class="intro-card">
-                <h2 class="intro-title">网站简介 · 初心使命</h2>
-                <p class="intro-text">
-                    本讲堂深耕中华传统易学文化领域，溯源千年民俗智慧，汇集择吉择日、家居堪舆、子平八字、奇门遁甲等正统术数知识。摒弃虚妄浮夸之说，恪守传统文化本源，以客观严谨的态度解读易学内涵，为易学爱好者搭建纯净、专业的学习交流平台。
-                </p>
-                <p class="mission-text">
-                    我们始终以传承国学经典为核心使命，弘扬正统风水命理文化，普及实用易学常识。潜心研习古法精髓，分享实战经验与传统文化知识，引导大众正确认知易学文化，守护千年民俗文脉，助力传统国学智慧代代相传。
-                </p>
-            </div>
-        </div>
-    </main>
+   <!-- 【主内容结构化区块】AI生成式搜索精准收录 -->
+    <main aria-label="会员中心主体内容">
+        <article aria-label="会员权益完整介绍">
+            <div class="container">
+<h1 class="page-title">会员专属中心</h1>
+               <div class="line-de</div>
+
+               <!-- 会员功能入口按钮<div class="member-btn-box">
+<a href="#" class="member-btn">会员专</a>
+<a href="#" class="member-btn">会员专享秘传资料</div><!-- 新增：超级醒目 立即成为会员<div class="join-btn-wrap"><a href="#" class="join-member-btn"></a></div>
+
+<!-- 会员初心介绍<section aria-label="会员创立初心介绍" class="card">
+<h2>会员初心 · 创立初衷</h2>
+                    <p>仁财易讲堂创立会员体系，初衷只为正本清源、传承正统易学。当下网络易学知识杂乱混杂、真假难辨，多数爱好者耗费大量时间，却学不到正统古法、实战干货。为让真心好学、尊重传统文化的有缘人，少走弯路、快速入门、系统提升，我们专门设立会员专属体系</p>
+                   <p>本平台坚持不炒作、不玄学噱头、不制造焦虑，只传授真实、可落地、有传承的八字、风水、择吉、奇门遁甲实战学问，让传统文化得以正信、正学、</p>
+</section>
+
+               <!-- 会员权益简介 --><section aria-label="会员专属权益介绍" class="card">
+                   <h2>会员专属</h2><p>正式会员可享受平台全部进阶核心资源，包含独家内部教学、秘传古籍资料、高阶实战短视频、内部专属技法口诀、持续更新的易学进阶课程。所有内容均为对外普通公开内容之外的深度干货，专为精进提升的学员准备</p>
+                   <p>会员可长期观看更新课程、免费领取独家秘传文档、优先学习最新实战技法、优先参与讲堂内部答疑交流，系统完整搭建个人易学知识体系，从零基础直达实战</p>
+</section>
+
+               <!-- 成为会员条件 --><section aria-label="入会资格条件说明" class="card">
+                   <h2>成为会员</h2><p>本讲堂会员不对外开放随意加入，只为真心热爱国学、尊重易学文化、心态端正、虚心求学的有缘人开放。无年龄限制、无学历限制、无基础门槛，只要心存善念、尊师重道、愿意踏实学习传统文化，即可申请</p><p>拒绝浮躁功利、心术不正、诋毁国学、盲目迷信之人加入。我们坚守正统传承，只渡有缘、好学、正信之人，共同守护纯净易学文化圈子</p>
+                </section>
+
+            </article</main>
+
 </body>
 </html>
