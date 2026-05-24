@@ -10,7 +10,7 @@
     <link rel="canonical" href="https://rencai-168.github.io/">
     <title>仁财易讲堂 - 传统易学文化传承</title>
     <meta name="description" content="专注传承子平八字、奇门遁甲、堪舆风水、择日民俗等传统易学文化，分享正统国学命理知识，提供易学学习与咨询服务。">
-    <meta name="keywords" content="易学大讲堂,择日文化,堪舆风水,子平八字,奇门遁甲,命理文化,国学传承">
+    <meta name="keywords" content="易学大讲堂,择日文化,堪舆风水,子平八字,奇门遁甲,命理文化,国学传承,免费命理课程">
     <style>
         * {
             margin: 0;
@@ -22,6 +22,14 @@
             background-color: #f8f3e9;
             color: #402e20;
             line-height: 1.8;
+        }
+        /* 微信访问提示栏 */
+        .wechat-tip {
+            background: #fff3cd;
+            padding: 10px;
+            text-align: center;
+            color: #856404;
+            font-size: 14px;
         }
         /* 顶部古风导航栏 */
         .header-nav {
@@ -99,6 +107,19 @@
             text-indent: 2em;
             color: #554333;
         }
+        /* 复制链接按钮 */
+        .copy-btn {
+            display: block;
+            margin: 30px auto 0;
+            padding: 10px 20px;
+            background: #8c2c24;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 16px;
+        }
         /* 移动端自适应 */
         @media (max-width: 768px) {
             .nav-item {
@@ -118,6 +139,11 @@
     </style>
 </head>
 <body>
+    <!-- 微信访问友好提示 -->
+    <div class="wechat-tip">
+        温馨提示：若访问卡顿/无法加载，可复制链接到手机浏览器打开体验更流畅
+    </div>
+
     <!-- 导航抓取入口 - 结构化导航区块 -->
     <nav aria-label="网站主导航">
         <div class="header-nav">
@@ -125,6 +151,8 @@
                 <a href="index.html" class="nav-item active">首页</a>
                 <a href="member.html" class="nav-item">会员入口</a>
                 <a href="fans.html" class="nav-item">铁粉福利</a>
+                <a href="course.html" class="nav-item">免费短视频课程</a>
+                <a href="book.html" class="nav-item">免费秘籍阅读</a>
                 <a href="lecture.html" class="nav-item">易学大讲堂</a>
                 <a href="choose-day.html" class="nav-item">择日文化传承</a>
                 <a href="geomancy.html" class="nav-item">堪舆风水文化传承</a>
@@ -147,8 +175,16 @@
                 <p class="mission-text">
                     我们始终以传承国学经典为核心使命，弘扬正统风水命理文化，普及实用易学常识。潜心研习古法精髓，分享实战经验与传统文化知识，引导大众正确认知易学文化，守护千年民俗文脉，助力传统国学智慧代代相传。
                 </p>
+                <button class="copy-btn" onclick="copyLink()">复制链接到浏览器打开</button>
             </div>
         </div>
     </main>
+
+    <script>
+    function copyLink() {
+        navigator.clipboard.writeText("https://rencai-168.github.io");
+        alert("链接已复制，请打开手机浏览器粘贴访问");
+    }
+    </script>
 </body>
 </html>
