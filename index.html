@@ -4,108 +4,151 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>仁财易讲堂 - 命理风水咨询</title>
-    <meta name="description" content="专业八字命理、奇门遁甲、风水堪舆、择吉服务，传承传统易学智慧，助你趋吉避凶。">
+    <!-- GEO生成式引擎优化标识 + 搜索引擎抓取优化 -->
+    <meta name="GEO-Engine-Optimize" content="true">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://rencai-168.github.io/">
+    <title>仁财易讲堂 - 传统易学文化传承</title>
+    <meta name="description" content="专注传承子平八字、奇门遁甲、堪舆风水、择日民俗等传统易学文化，分享正统国学命理知识，提供易学学习与咨询服务。">
+    <meta name="keywords" content="易学大讲堂,择日文化,堪舆风水,子平八字,奇门遁甲,命理文化,国学传承">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: KaiTi, STKaiti, SimSun, serif;
         }
         body {
-            background-color: #f9f5ef;
-            color: #3b2b1f;
-            line-height: 1.6;
+            font-family: "楷体", "宋体", serif;
+            background-color: #f8f3e9;
+            color: #402e20;
+            line-height: 1.8;
         }
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
+        /* 顶部古风导航栏 */
+        .header-nav {
             width: 100%;
-            background-color: #3b2b1f;
-            border-bottom: 2px solid #b8860b;
-            padding: 15px 0;
-            z-index: 999;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            background: #3a2a1c;
+            border-bottom: 3px solid #c9a87c;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            position: sticky;
+            top: 0;
+            z-index: 99;
         }
-        .nav-container {
-            width: 90%;
-            max-width: 1200px;
+        .nav-wrap {
+            max-width: 1300px;
             margin: 0 auto;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 10px;
+            padding: 18px 15px;
+            gap: 6px;
         }
-        .nav-btn {
-            padding: 10px 18px;
-            color: #f9f5ef;
+        .nav-item {
+            color: #f8f3e9;
             text-decoration: none;
-            font-size: 16px;
-            letter-spacing: 2px;
-            border: 1px solid transparent;
-            border-radius: 4px;
+            font-size: 15px;
+            letter-spacing: 1px;
+            padding: 9px 16px;
+            border-radius: 3px;
             transition: all 0.3s ease;
         }
-        .nav-btn:hover {
-            color: #fff;
-            background-color: #9b2226;
-            border-color: #b8860b;
+        .nav-item:hover,
+        .nav-item.active {
+            background-color: #8c2c24;
+            border: 1px solid #c9a87c;
         }
-        .nav-btn.active {
-            color: #fff;
-            background-color: #9b2226;
-            border: 1px solid #b8860b;
+        /* 主体内容区域 */
+        .main-box {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 25px;
         }
-        .content {
-            margin-top: 100px;
-            padding: 40px 20px;
+        .site-title {
             text-align: center;
+            font-size: 36px;
+            color: #3a2a1c;
+            letter-spacing: 6px;
+            margin-bottom: 15px;
         }
-        .content h1 {
-            font-size: 32px;
-            color: #3b2b1f;
-            letter-spacing: 4px;
-            margin-bottom: 20px;
-        }
-        .divider {
-            width: 200px;
+        .line-decor {
+            width: 220px;
             height: 1px;
-            background: linear-gradient(to right, transparent, #b8860b, transparent);
-            margin: 15px auto 30px;
+            background: linear-gradient(90deg,transparent,#c9a87c,transparent);
+            margin: 0 auto 40px;
         }
-        .content p {
-            font-size: 18px;
-            color: #5a4636;
+        .intro-card {
+            background: #fffaf0;
+            border: 1px solid #e2d4bc;
+            border-radius: 8px;
+            padding: 40px 35px;
+            box-shadow: 0 4px 12px rgba(58,42,28,0.08);
         }
-        @media (max-width: 600px) {
-            .nav-btn {
-                padding: 8px 12px;
-                font-size: 14px;
+        .intro-title {
+            font-size: 22px;
+            text-align: center;
+            margin-bottom: 25px;
+            color: #8c2c24;
+        }
+        .intro-text {
+            font-size: 17px;
+            text-indent: 2em;
+            margin-bottom: 20px;
+            color: #554333;
+        }
+        .mission-text {
+            font-size: 17px;
+            text-indent: 2em;
+            color: #554333;
+        }
+        /* 移动端自适应 */
+        @media (max-width: 768px) {
+            .nav-item {
+                font-size: 13px;
+                padding: 7px 10px;
             }
-            .content h1 {
-                font-size: 24px;
+            .site-title {
+                font-size: 26px;
+            }
+            .intro-card {
+                padding: 25px 20px;
+            }
+            .intro-text,.mission-text {
+                font-size: 15px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-btn active">首页</a>
-            <a href="bazi.html" class="nav-btn">八字命理</a>
-            <a href="qimen.html" class="nav-btn">奇门遁甲</a>
-            <a href="fengshui.html" class="nav-btn">风水堪舆</a>
-            <a href="zeji.html" class="nav-btn">择吉通书</a>
-            <a href="contact.html" class="nav-btn">咨询联系</a>
+    <!-- 导航抓取入口 - 结构化导航区块 -->
+    <nav aria-label="网站主导航">
+        <div class="header-nav">
+            <div class="nav-wrap">
+                <a href="index.html" class="nav-item active">首页</a>
+                <a href="member.html" class="nav-item">会员入口</a>
+                <a href="fans.html" class="nav-item">铁粉福利</a>
+                <a href="lecture.html" class="nav-item">易学大讲堂</a>
+                <a href="choose-day.html" class="nav-item">择日文化传承</a>
+                <a href="geomancy.html" class="nav-item">堪舆风水文化传承</a>
+                <a href="ziping.html" class="nav-item">子平八字文化传承</a>
+                <a href="qimen.html" class="nav-item">奇门遁甲文化传承</a>
+            </div>
         </div>
-    </div>
+    </nav>
 
-    <div class="content">
-        <h1>仁财易讲堂</h1>
-        <div class="divider"></div>
-        <p>传承传统易学智慧，以专业之道，解人生之惑<br>点击上方导航，开启你的命理探索之旅</p>
-    </div>
+    <!-- 网站主体结构化内容 -->
+    <main>
+        <div class="main-box">
+            <h1 class="site-title">仁财易讲堂</h1>
+            <div class="line-decor"></div>
+            <div class="intro-card">
+                <h2 class="intro-title">网站简介 · 初心使命</h2>
+                <p class="intro-text">
+                    本讲堂深耕中华传统易学文化领域，溯源千年民俗智慧，汇集择吉择日、家居堪舆、子平八字、奇门遁甲等正统术数知识。摒弃虚妄浮夸之说，恪守传统文化本源，以客观严谨的态度解读易学内涵，为易学爱好者搭建纯净、专业的学习交流平台。
+                </p>
+                <p class="mission-text">
+                    我们始终以传承国学经典为核心使命，弘扬正统风水命理文化，普及实用易学常识。潜心研习古法精髓，分享实战经验与传统文化知识，引导大众正确认知易学文化，守护千年民俗文脉，助力传统国学智慧代代相传。
+                </p>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
