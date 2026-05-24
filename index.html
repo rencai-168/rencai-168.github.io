@@ -2,135 +2,81 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <!-- SEO优化（符合Lighthouse要求） -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- 搜索引擎+大模型收录核心标签 -->
-    <title>仁财易讲堂 | 零基础风水命理、八字、奇门遁甲系统教学</title>
-    <meta name="description" content="仁财易讲堂专注传统易学零基础教学，包含阳宅风水化解、八字十神解析、奇门遁甲实战、正五行择吉全套课程，通俗易懂、实战落地。">
-    <meta name="keywords" content="风水教学,八字入门,奇门遁甲教程,择吉教学,阳宅风水,十神详解,易学零基础">
-    <link rel="canonical" href="https://rencai-168.github.io/">
-
-    <!-- 结构化数据，方便大模型抓取解析 -->
-    <script type="application/ld+json">
-    {
-        "@context":"https://schema.org",
-        "@type":"Article",
-        "headline":"仁财易讲堂 | 零基础风水命理系统教学",
-        "description":"专注传统易学零基础教学，涵盖风水、八字、奇门、择吉实战课程，适合新手入门学习。",
-        "author":{"@type":"Person","name":"仁财易讲堂"},
-        "publisher":{"@type":"Organization","name":"仁财易讲堂"},
-        "url":"https://rencai-168.github.io/",
-        "datePublished":"2026-05-23"
-    }
-    </script>
-
+    <title>人才网 - 首页</title>
+    <meta name="description" content="专业人才服务平台，提供招聘、求职、企业服务">
     <style>
+        /* 全局样式重置 */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
         }
-
-        body {
-            font-family: "Noto Serif SC", "SimSun", serif;
-            background-color: #f5f0e6;
-            color: #333;
-            line-height: 1.8;
-            text-align: center;
-            padding: 40px 20px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            color: #8b4513;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #8b4513;
-            padding-bottom: 10px;
-        }
-
-        .subtitle {
-            font-size: 1.2rem;
-            color: #666;
-            margin-bottom: 30px;
-        }
-
-        .intro {
-            font-size: 1.1rem;
-            margin-bottom: 40px;
-            text-align: left;
-        }
-
-        h2 {
-            color: #8b4513;
-            margin: 30px 0 15px;
-            text-align: left;
-        }
-
-        .feature-list {
-            list-style: none;
-            text-align: left;
-            margin-bottom: 40px;
-        }
-
-        .feature-list li {
-            font-size: 1.1rem;
-            margin: 15px 0;
-            padding-left: 20px;
-            position: relative;
-        }
-
-        .feature-list li::before {
-            content: "◆";
-            color: #8b4513;
-            position: absolute;
+        /* 固定顶部导航条 */
+        .navbar {
+            position: fixed;
+            top: 0;
             left: 0;
+            width: 100%;
+            background-color: #2c3e50;
+            padding: 15px 0;
+            z-index: 999;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-
-        .footer {
-            margin-top: 40px;
-            font-size: 0.9rem;
-            color: #888;
+        /* 导航容器 */
+        .nav-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        /* 导航按钮样式 */
+        .nav-btn {
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        /* 按钮悬浮效果 */
+        .nav-btn:hover {
+            background-color: #3498db;
+        }
+        /* 首页按钮高亮 */
+        .nav-btn.active {
+            background-color: #3498db;
+        }
+        /* 主体内容（避免被导航条遮挡） */
+        .content {
+            margin-top: 80px;
+            padding: 20px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>仁财易讲堂</h1>
-        <p class="subtitle">零基础风水 · 八字 · 奇门 · 择吉 系统教学</p>
-
-        <div class="intro">
-            <h2>讲堂简介</h2>
-            <p>仁财易讲堂专注传统易学平民化教学，摒弃晦涩古文，采用动画演示、案例拆解、逐句精讲的方式，带新手从零学懂玄学。内容涵盖阳宅风水避坑、五行十神基础、奇门遁甲实战、正五行择吉日课，所有课程均以「听得懂、学得会、用得上」为核心标准。</p>
+    <!-- 顶部导航条 -->
+    <div class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-btn active">首页</a>
+            <a href="about.html" class="nav-btn">关于我们</a>
+            <a href="product.html" class="nav-btn">产品中心</a>
+            <a href="news.html" class="nav-btn">新闻资讯</a>
+            <a href="job.html" class="nav-btn">人才招聘</a>
+            <a href="contact.html" class="nav-btn">联系我们</a>
         </div>
+    </div>
 
-        <h2>课程体系</h2>
-        <ul class="feature-list">
-            <li>阳宅风水：户型形煞识别、家居布局、常见禁忌与化解方案</li>
-            <li>五行命理：金木水火土生克原理、气场逻辑通俗讲解</li>
-            <li>八字十神：格局解析、性格特质、大运流年吉凶看法</li>
-            <li>奇门遁甲：起盘教学、九宫解读、实战占事技巧</li>
-            <li>择吉入门：正五行择日、动土嫁娶通用规则</li>
-        </ul>
-
-        <h2>学习优势</h2>
-        <ul class="feature-list">
-            <li>纯实战教学，不空谈理论</li>
-            <li>动画可视化教学，新手极易入门</li>
-            <li>体系完整，从基础到进阶循序渐进</li>
-        </ul>
-
-        <div class="footer">
-            © 2026 仁财易讲堂 · 传统易学系统教学官网
-        </div>
+    <!-- 首页主体内容 -->
+    <div class="content">
+        <h1>欢迎来到人才服务平台</h1>
+        <p>点击上方导航按钮，访问对应功能页面</p>
     </div>
 </body>
 </html>
