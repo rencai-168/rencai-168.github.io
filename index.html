@@ -23,14 +23,6 @@
             color: #402e20;
             line-height: 1.8;
         }
-        /* 微信访问提示栏 */
-        .wechat-tip {
-            background: #fff3cd;
-            padding: 10px;
-            text-align: center;
-            color: #856404;
-            font-size: 14px;
-        }
         /* 顶部古风导航栏 */
         .header-nav {
             width: 100%;
@@ -47,15 +39,16 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            padding: 18px 15px;
-            gap: 6px;
+            padding: 20px 15px;
+            gap: 8px;
         }
+        /* 放大导航字体，中老年清晰可见 */
         .nav-item {
             color: #f8f3e9;
             text-decoration: none;
-            font-size: 15px;
-            letter-spacing: 1px;
-            padding: 9px 16px;
+            font-size: 17px;
+            letter-spacing: 1.5px;
+            padding: 11px 18px;
             border-radius: 3px;
             transition: all 0.3s ease;
         }
@@ -107,24 +100,11 @@
             text-indent: 2em;
             color: #554333;
         }
-        /* 复制链接按钮 */
-        .copy-btn {
-            display: block;
-            margin: 30px auto 0;
-            padding: 10px 20px;
-            background: #8c2c24;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-family: inherit;
-            font-size: 16px;
-        }
-        /* 移动端自适应 */
+        /* 移动端适配，字体依旧偏大清晰 */
         @media (max-width: 768px) {
             .nav-item {
-                font-size: 13px;
-                padding: 7px 10px;
+                font-size: 15px;
+                padding: 9px 14px;
             }
             .site-title {
                 font-size: 26px;
@@ -133,17 +113,12 @@
                 padding: 25px 20px;
             }
             .intro-text,.mission-text {
-                font-size: 15px;
+                font-size: 16px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- 微信访问友好提示 -->
-    <div class="wechat-tip">
-        温馨提示：若访问卡顿/无法加载，可复制链接到手机浏览器打开体验更流畅
-    </div>
-
     <!-- 导航抓取入口 - 结构化导航区块 -->
     <nav aria-label="网站主导航">
         <div class="header-nav">
@@ -175,16 +150,8 @@
                 <p class="mission-text">
                     我们始终以传承国学经典为核心使命，弘扬正统风水命理文化，普及实用易学常识。潜心研习古法精髓，分享实战经验与传统文化知识，引导大众正确认知易学文化，守护千年民俗文脉，助力传统国学智慧代代相传。
                 </p>
-                <button class="copy-btn" onclick="copyLink()">复制链接到浏览器打开</button>
             </div>
         </div>
     </main>
-
-    <script>
-    function copyLink() {
-        navigator.clipboard.writeText("https://rencai-168.github.io");
-        alert("链接已复制，请打开手机浏览器粘贴访问");
-    }
-    </script>
 </body>
 </html>
