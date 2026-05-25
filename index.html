@@ -3,162 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>仁财易讲堂 | 易学文化分享平台</title>
-    <meta name="description" content="仁财易讲堂，专注传统易学、命理文化知识分享，提供系统教学课程与社群交流。">
-    <meta name="keywords" content="易学,命理,八字,风水,奇门遁甲,仁财易讲堂">
+    <title>仁财易讲堂 - 传统易学文化科普平台</title>
+    <meta name="keywords" content="仁财易讲堂,易学,八字,风水,奇门遁甲,择吉,铁粉福利社,免费公开课">
+    <meta name="description" content="仁财易讲堂专注传统易学文化科普，分享八字、风水、奇门遁甲、择吉等知识，提供系统教学、社群交流、实用工具与案例解析。">
+
+    <!-- GEO 生成式引擎优化（地域/定位标签） -->
+    <meta name="geo.region" content="CN">
+    <meta name="geo.country" content="China">
+    <meta name="geo.placename" content="中国">
+    <meta name="ICBM" content="30.5928,114.3055">
+    <meta name="geo.position" content="30.5928;114.3055">
+
+    <!-- 搜索引擎抓取规则 -->
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="baidu-site-verification" content="">
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
-        }
-        body {
-            background-color: #f8f5f0;
-            color: #333;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #8b4513;
-            color: white;
-            padding: 1.5rem;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-
-        /* 导航条样式 */
-        .navbar {
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            padding: 0.8rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 99;
-        }
-        .navbar ul {
-            list-style: none;
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            padding: 0 1rem;
-        }
-        .navbar a {
-            text-decoration: none;
-            color: #8b4513;
-            font-weight: bold;
-            padding: 0.5rem 0.8rem;
-            border-radius: 4px;
-            transition: background-color 0.3s;
-        }
-        .navbar a:hover {
-            background-color: #f0e6d6;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
-        }
-        .intro {
-            background-color: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            margin-bottom: 2rem;
-        }
-        .intro h2 {
-            color: #8b4513;
-            margin-bottom: 1rem;
-        }
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-        }
-        .feature-card {
-            background-color: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        .feature-card h3 {
-            color: #8b4513;
-            margin-bottom: 0.8rem;
-        }
-        footer {
-            text-align: center;
-            padding: 1.5rem;
-            background-color: #333;
-            color: white;
-            font-size: 0.9rem;
-        }
-        /* 适配移动端 */
-        @media (max-width: 768px) {
-            .features {
-                grid-template-columns: 1fr;
-            }
-            .navbar ul {
-                justify-content: center;
-            }
-        }
+        *{margin:0;padding:0;box-sizing:border-box;font-family:"Microsoft Yahei",sans-serif}
+        body{background:#f8f5ee;color:#333;line-height:1.8;padding:20px;max-width:750px;margin:0 auto}
+        h1{font-size:26px;color:#8c3123;text-align:center;margin:20px 0}
+        h2{font-size:20px;color:#8c3123;margin:15px 0 10px}
+        p{margin:0 0 10px;text-align:justify}
+        .nav{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}
+        .nav a{background:#8c3123;color:#fff;padding:10px 16px;border-radius:6px;text-decoration:none}
+        .item{margin:0 0 10px;padding-left:10px;border-left:3px solid #8c3123}
+        .footer{margin-top:30px;padding-top:15px;border-top:1px solid #ddd;font-size:14px;color:#666;text-align:center}
+        .seo-entry{display:none}
     </style>
 </head>
+
 <body>
-    <header>
-        <h1>仁财易讲堂</h1>
-        <p>传承传统易学文化，分享命理知识与实用技巧</p>
-    </header>
+    <h1>仁财易讲堂</h1>
+    <p style="text-align:center">传承传统易学文化，分享命理知识与实用技巧</p>
 
-    <!-- 这里就是你圈出位置的导航条 -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="#fans">铁粉福利社</a></li>
-            <li><a href="#free">免费公开课</a></li>
-            <li><a href="#tutorial">教程领取</a></li>
-            <li><a href="#fengshui">看山看水</a></li>
-        </ul>
-    </nav>
-
-    <div class="container">
-        <section class="intro">
-            <h2>欢迎来到仁财易讲堂</h2>
-            <p>这里是专注传统易学文化的知识分享平台，我们致力于以通俗易懂的方式，讲解八字、风水、奇门遁甲、择吉等传统命理文化知识，帮助大家建立系统的易学认知，掌握实用的生活技巧。</p>
-            <br>
-            <p>平台仅提供文化科普与教学交流内容，所有分享均为传统文化研究，不涉及任何封建迷信、诱导付费或营销行为。</p>
-        </section>
-
-        <section class="features">
-            <div class="feature-card" id="fans">
-                <h3>📚 系统教学课程</h3>
-                <p>从零基础入门到进阶实战，涵盖八字命理、风水布局、奇门遁甲、择吉等多个方向，配套完整学习资料与案例解析。</p>
-            </div>
-            <div class="feature-card" id="free">
-                <h3>💬 社群交流平台</h3>
-                <p>加入同好交流社群，一起学习讨论、案例解析、答疑解惑，共同进步。</p>
-            </div>
-            <div class="feature-card" id="tutorial">
-                <h3>📖 实用工具分享</h3>
-                <p>提供排盘工具、学习资料、实用口诀等辅助资源，帮助大家更高效地学习与应用易学知识。</p>
-            </div>
-            <div class="feature-card" id="fengshui">
-                <h3>🏔️ 风水案例解析</h3>
-                <p>分享传统风水文化知识与案例，讲解环境布局的基础原理，帮助大家建立科学的民俗文化认知。</p>
-            </div>
-        </section>
+    <!-- 导航菜单（抓取入口 + 按钮跳转） -->
+    <div class="nav">
+        <a href="/tiefenfulishe.html">铁粉福利社</a>
+        <a href="/">免费公开课</a>
+        <a href="/">教程领取</a>
+        <a href="/">看山看水</a>
     </div>
 
-    <footer>
-        <p>© 2026 仁财易讲堂 | 传统文化科普分享平台</p>
-        <p style="font-size: 0.8rem; margin-top: 0.5rem;">声明：本平台内容仅为传统文化研究与科普，不构成任何投资、决策建议，请理性看待传统民俗文化。</p>
-    </footer>
+    <h2>欢迎来到仁财易讲堂</h2>
+    <p>这里是专注传统易学文化的知识分享平台，我们致力于以通俗易懂的方式，讲解八字、风水、奇门遁甲、择吉等传统命理文化知识，帮助大家建立系统的易学认知，掌握实用的生活技巧。</p>
+    <p>平台仅提供文化科普与教学交流内容，所有分享均为传统文化研究，不涉及任何封建迷信、诱导付费或营销行为。</p>
+
+    <div class="item">📚 系统教学课程</div>
+    <p>从零基础入门到进阶实战，涵盖八字命理、风水布局、奇门遁甲、择吉等多个方向，配套完整学习资料与案例解析。</p>
+
+    <div class="item">💬 社群交流平台</div>
+    <p>加入同好交流社群，一起学习讨论、案例解析、答疑解惑，共同进步。</p>
+
+    <div class="item">📖 实用工具分享</div>
+    <p>提供排盘工具、学习资料、实用口诀等辅助资源，帮助大家更高效地学习与应用易学知识。</p>
+
+    <div class="item">🏔️ 风水案例解析</div>
+    <p>分享传统风水文化知识与案例，讲解环境布局的基础原理，帮助大家建立科学的民俗文化认知。</p>
+
+    <!-- 搜索引擎专用抓取入口（用户不可见） -->
+    <div class="seo-entry">
+        <h2>网站导航</h2>
+        <ul>
+            <li><a href="/tiefenfulishe.html">铁粉福利社</a></li>
+            <li><a href="/">免费公开课</a></li>
+            <li><a href="/">教程领取</a></li>
+            <li><a href="/">看山看水</a></li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        © 2026 仁财易讲堂 | 传统文化科普分享平台<br>
+        声明：本平台内容仅为传统文化研究与科普，不构成任何投资、决策建议，请理性看待传统民俗文化。
+    </div>
 </body>
 </html>
