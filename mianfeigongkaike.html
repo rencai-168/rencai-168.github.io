@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>免费公开课 | 仁财易讲堂 - 易经风水文化分享平台</title>
+    <meta name="keywords" content="仁财易讲堂,免费公开课,易学零基础入门,八字命理,阴阳宅风水,风水布局，奇门遁甲,择吉,正五行择日">
+    <meta name="description" content="仁财易讲堂免费公开课，涵盖八字命理、风水布局、奇门遁甲、择吉等易学知识，零基础也能轻松入门，免费学习传统易学文化。">
+
+    <!-- GEO 地域引擎优化 -->
+    <meta name="geo.region" content="CN">
+    <meta name="geo.country" content="China">
+    <meta name="geo.placename" content="中国">
+    <meta name="ICBM" content="30.5928,114.3055">
+    <meta name="geo.position" content="30.5928;114.3055">
+
+    <!-- 搜索引擎抓取规则 -->
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+
+    <style>
+        /* 复用首页核心样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", "PingFang SC", sans-serif;
+        }
+        body {
+            background-color: #f8f5ee;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        /* 顶部Banner（和首页完全一致） */
+        .header-banner {
+            background-color: #8b4513;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .header-banner h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .header-banner p {
+            font-size: 28px;
+            line-height: 1.6;
+        }
+
+        /* 导航栏（和首页一致，当前页标红提示） */
+        .nav-bar {
+            background-color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px 10px;
+            font-size: 22px;
+        }
+        .nav-bar a {
+            color: #8b4513;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .nav-bar a:hover {
+            opacity: 0.8;
+        }
+        .nav-bar a.active {
+            color: #c41e3a;
+            border-bottom: 3px solid #c41e3a;
+        }
+
+        /* 主体内容区（和首页一致） */
+        .container {
+            max-width: 90%;
+            margin: 20px auto;
+        }
+
+        /* 卡片样式（延续首页圆角、阴影） */
+        .card {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+        .card h2 {
+            color: #8b4513;
+            font-size: 32px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .card p {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        .card .item-title {
+            color: #8b4513;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* 公开课列表样式（新增） */
+        .course-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+        .course-item {
+            border-left: 4px solid #8b4513;
+            padding: 20px 15px;
+            background-color: #faf6f0;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 15px;
+        }
+        .course-item h3 {
+            color: #8b4513;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .course-item .course-info {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .course-item .course-desc {
+            font-size: 19px;
+            line-height: 1.7;
+        }
+
+        /* 报名提示样式（新增） */
+        .apply-tip {
+            background-color: #fff8e6;
+            border: 1px solid #8b4513;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 20px;
+            color: #8b4513;
+            text-align: center;
+        }
+
+        /* 页脚（和首页一致） */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* 搜索引擎专用抓取入口（用户不可见） */
+        .seo-entry {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 顶部Banner（和首页一致） -->
+    <div class="header-banner">
+        <h1>仁财易讲堂</h1>
+        <p>传承易学文化  解读堪舆智慧</p>
+    </div>
+
+    <!-- 导航栏（当前页标为active，链接对应首页/其他页面） -->
+    <div class="nav-bar">
+        <a href="/tiefenfulishe.html">铁粉福利社</a>
+        <a href="/free-course.html" class="active">免费公开课</a>
+        <a href="#">教程领取</a>
+        <a href="#">看山看水</a>
+        <!-- 增加返回首页按钮，提升用户体验 -->
+        <a href="/index.html">返回首页</a>
+    </div>
+
+    <!-- 主体内容区 -->
+    <div class="container">
+        <!-- 公开课介绍卡片 -->
+        <div class="card">
+            <h2>免费公开课专区</h2>
+            <p>仁财易讲堂免费公开课致力于让更多人了解正统易学文化，所有课程均由资深易学讲师亲授，从零基础入门到核心知识点拆解，拒绝晦涩难懂的理论堆砌，用通俗的语言讲解传统易学智慧，让传统文化贴近生活、易学易用。</p>
+            <p>本专区所有公开课无需付费、无需转发，直接报名即可参与，课程内容涵盖八字命理、阴阳宅风水、奇门遁甲、正五行择日等多个方向，满足不同阶段易学爱好者的学习需求。</p>
+        </div>
+
+        <!-- 公开课列表卡片 -->
+        <div class="card">
+            <div class="item-title">
+                📅 近期公开课安排
+            </div>
+            <ul class="course-list">
+                <li class="course-item">
+                    <h3>【零基础入门】八字命理核心概念解析</h3>
+                    <div class="course-info">
+                        <span>⏰ 时间：每周三 20:00-21:30</span>
+                        <span>👨‍🏫 讲师：黄老师</span>
+                        <span>📌 形式：线上直播（可看回放）</span>
+                    </div>
+                    <div class="course-desc">
+                        从天干地支、五行生克等基础概念入手，讲解八字排盘方法，解读日主强弱、十神关系等核心知识点，帮助零基础学员快速建立八字命理的基础认知，避开入门常见误区。
+                    </div>
+                </li>
+                <li class="course-item">
+                    <h3>【家居风水】常见户型风水布局技巧</h3>
+                    <div class="course-info">
+                        <span>⏰ 时间：每周六 19:30-21:00</span>
+                        <span>👨‍🏫 讲师：黄老师</span>
+                        <span>📌 形式：线上直播+案例解析</span>
+                    </div>
+                    <div class="course-desc">
+                        结合实际户型案例，讲解大门、客厅、卧室、厨房等关键区域的风水布局原则，分析常见的风水问题及化解方法，无需专业工具，普通人也能轻松应用。
+                    </div>
+                </li>
+                <li class="course-item">
+                    <h3>【择吉入门】正五行择日的核心逻辑</h3>
+                    <div class="course-info">
+                        <span>⏰ 时间：每周日 15:00-16:30</span>
+                        <span>👨‍🏫 讲师：黄老师</span>
+                        <span>📌 形式：线上直播+资料发放</span>
+                    </div>
+                    <div class="course-desc">
+                        讲解择吉的核心原则，区分正五行择日与其他择日方法的差异，结合婚嫁、搬家、开业等常见场景，教你快速筛选吉利日期，避开不利时辰。
+                    </div>
+                </li>
+                <li class="course-item">
+                    <h3>【奇门遁甲】基础盘式与常用符号解读</h3>
+                    <div class="course-info">
+                        <span>⏰ 时间：每月第一周周五 20:00-21:30</span>
+                        <span>👨‍🏫 讲师：黄老师</span>
+                        <span>📌 形式：线上直播（进阶课程）</span>
+                    </div>
+                    <div class="course-desc">
+                        适合有一定易学基础的学员，讲解奇门遁甲的九宫、八门、九星等基础符号含义，演示起盘方法，解析简单的趋吉避凶思路，为进阶学习打下基础。
+                    </div>
+                </li>
+            </ul>
+
+            <!-- 报名提示 -->
+            <div class="apply-tip">
+                📢 公开课报名方式：添加助教微信（rencaiyjt），备注“公开课”即可获取直播链接及学习资料，所有课程免费参与，无任何隐形消费。
+            </div>
+        </div>
+
+        <!-- 公开课常见问题卡片 -->
+        <div class="card">
+            <div class="item-title">
+                ❓ 公开课常见问题
+            </div>
+            <p><strong>Q1：错过直播可以看回放吗？</strong><br>
+            A：可以的，所有公开课都会保留回放视频，报名后助教会统一发放回放链接，有效期为7天，方便大家灵活学习。</p>
+            <p><strong>Q2：需要提前准备学习资料吗？</strong><br>
+            A：无需提前准备，公开课会发放配套电子资料，讲师也会在直播中逐步讲解，零基础学员可直接参与。</p>
+            <p><strong>Q3：公开课有答疑环节吗？</strong><br>
+            A：有的，每场直播最后30分钟为答疑时间，学员可在评论区提问，讲师会逐一解答，也可在社群内后续交流。</p>
+            <p><strong>Q4：是否需要付费才能加入学习社群？</strong><br>
+            A：不需要，公开课学员可免费加入学习社群，社群内会分享学习资料、解答日常疑问，无任何付费要求。</p>
+        </div>
+    </div>
+
+    <!-- 搜索引擎专用抓取入口（用户不可见） -->
+    <div class="seo-entry">
+        <h2>免费公开课导航</h2>
+        <ul>
+            <li><a href="/index.html">返回首页</a></li>
+            <li><a href="/tiefenfulishe.html">铁粉福利社</a></li>
+            <li><a href="#">教程领取</a></li>
+            <li><a href="#">看山看水</a></li>
+        </ul>
+    </div>
+
+    <!-- 页脚（和首页一致） -->
+    <div class="footer">
+        © 2026 仁财易讲堂 | 传统文化科普分享平台<br>
+        声明：本平台内容仅为传统文化研究与科普，不构成任何投资、决策建议，请理性看待传统民俗文化。
+    </div>
+</body>
+</html>
